@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Olx</title>
+    <link rel="stylesheet" href="../olx/boostrap'/bootstrap.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header    -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex" style="width: 95%;">
+      
+      <div class="container-fluid">
+        <!-- <div class="container"> -->
+          <a class="navbar-brand" href="#"
+            ><img
+              src="img/olx-logo-vector.png"
+              alt=""
+              style="height: 30px; width: 40px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item dropdown d-flex">
+                <i class="fas fa-search search"></i>
+
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span id="navtext">Maharashtra</span>
+                </a>
+                <i class="fas fa-chevron-down m-auto"></i>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-map-marked"></i>
+                      <div class="d-inline-block ms-3">
+                        <div class="d-inline">
+                          <strong>Use current location</strong>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                          <small>Location blocked.</small>
+                          <small> browser/phone settings.</small>
+                        </div>
+                      </div></a
+                    >
+                  </li>
+                  <hr />
+                  <li class="dropdown-header">RECENT LOCATIONS</li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-map-marker-alt location"></i>India</a
+                    >
+                  </li>
+                  <hr />
+                  <li class="dropdown-header">POPULAR LOCATIONS</li>
+
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-map-marker-alt"></i>Pimpri</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-map-marker-alt"></i>Hadapsar</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-map-marker-alt"></i>Swarget</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <div class="res"> -->
+            <form class="d-flex rounded-start ms-3 ">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Find Cars, Mobile Phones and more..."
+                aria-label="Search"
+              />
+            </form>
+            <div class="btnsearch bg-dark rounded-end">
+              <i class="fas fa-search ps-1 text-white"></i>
+            </div>
+
+            <div class="dropdown d-flex" id="dropres">
+              <button
+                class="nitin btn btn-white dropdown-togglee d-flex m-0"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                ENGLISH
+
+                <i class="fas fa-angle-down ms-2 fs-3 me-2"></i>
+              </button>
+
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Marathi</a></li>
+              </ul>
+              <ul class="list-unstyled pt-3 ms-2 me-3 mb-0">
+                <li class="login">
+                  <a class="text-decoration-none text-dark" href="#"> Login</a>
+                </li>
+              </ul>
+              <ul class="list-unstyled mt-3 ms-2">
+                <li>
+                  <a class="btn-plus text-decoration-none" href="#"
+                    ><span><i class="fas fa-plus"></i> SELL</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav-list   -->
+    <div class="container-fluid nav-list-res">
+      <div class="dropdown d-flex" style="margin-left: 350px;">
+        <a
+          class="btn btn-white p-0"
+          style="width: 170px"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <span style="font-weight: bold"> ALL CATEGORIES</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="height: 100%; width: 100%;">
+          <div class="d-flex" style="background-color: #fff;">
+          <div class="col-3" >
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10PX;"><b>OLX AUTOS (Cars)</b></a></li>
+          <li><a class="dropdown-item" href="#"><b>Properties</b></a></li>
+          <li><a class="dropdown-item" href="#">For Sale: Houses & apartment</a></li>
+          <li><a class="dropdown-item" href="#">For rent: Houses & apartment</a></li>
+          <li><a class="dropdown-item" href="#">lands & Plots</a></li>
+          <li><a class="dropdown-item" href="#">For rent Shops & Offices</a></li>
+          <li><a class="dropdown-item" href="#">For Sale: Shops & Offices</a></li>
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;">PG & Guest Houses</a></li>
+          <li><a class="dropdown-item" href="#"><b>Mobiles</b></a></li>
+          <li><a class="dropdown-item" href="#">Mobile Phones</a></li>
+          <li><a class="dropdown-item" href="#">Acessories</a></li>
+          <li><a class="dropdown-item" href="#">Tablets</a></li>
+          </div>
+          <div class="col-3">
+          <li><a class="dropdown-item" href="#" ><b>Jobs</b></li>
+          <li><a class="dropdown-item" href="#">Data entry & Back OFfice</a></li>
+          <li><a class="dropdown-item" href="#">Sales & Marketing</a></li>
+          <li><a class="dropdown-item" href="#">BPO & Telecaller</a></li>
+          <li><a class="dropdown-item" href="#">Driver</a></li>
+          <li><a class="dropdown-item" href="#">Officer Assistant</a></li>
+          <li><a class="dropdown-item" href="#">Dilivery & Collection</a></li>
+          <li><a class="dropdown-item" href="#">Teacher</a></li>
+          <li><a class="dropdown-item" href="#">Cook</a></li>
+          <li><a class="dropdown-item" href="#">Receptionist & Front Office</a></li>
+          <li><a class="dropdown-item" href="#">Operator & Technician</a></li>
+          <li><a class="dropdown-item" href="#">IT Engineer & Developer</a></li>
+          <li><a class="dropdown-item" href="#">hotel & Travel excutive</a></li>
+          <li><a class="dropdown-item" href="#">Accountant</a></li>
+          <li><a class="dropdown-item" href="#">Desiger</a></li>
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;">Other Jobs</a></li>
+          <li><a class="dropdown-item" href="#"><b>Bikes</b></a></li>
+          <li><a class="dropdown-item" href="#">Motorcycles</a></li>
+          <li><a class="dropdown-item" href="#">Scooters Spare Parts</a></li>
+          <li><a class="dropdown-item" href="#">bicycles</a></li>
+          </div>
+          <div class="col-3">
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;"><b>Electronics & Appliances</b></a></li>
+          <li><a class="dropdown-item" href="#">TVs, Video - Audio</a></li>
+          <li><a class="dropdown-item" href="#">Kitchen & Other Appliances</a></li>
+          <li><a class="dropdown-item" href="#">Computers & Laptops</a></li>
+          <li><a class="dropdown-item" href="#">Cameras & Laptops</a></li>
+          <li><a class="dropdown-item" href="#">Games & Lenses</a></li>
+          <li><a class="dropdown-item" href="#">Games & Entertaiment</a></li>
+          <li><a class="dropdown-item" href="#">Fridge</a></li>
+          <li><a class="dropdown-item" href="#">Computer Accessories</a></li>
+          <li><a class="dropdown-item" href="#">Hard Disks, Printers & monitors</a></li>
+          <li><a class="dropdown-item" href="#">ACs</a></li>
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;">Washing Machines</a></li>
+          <li><a class="dropdown-item" href="#" ><b>Commerial Vehicles & Spares</b></a></li>
+          <li><a class="dropdown-item" href="#" >Commerical & Other Vehicles</a></li>
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;">Spare Parts</a></li>
+          <li><a class="dropdown-item" href="#" ><b>Furniture</b></a></li>
+          <li><a class="dropdown-item" href="#" >Sofa & Dining</a></li>
+          <li><a class="dropdown-item" href="#" >Beds & Wardrobes</a></li>
+          <li><a class="dropdown-item" href="#" >Home Decor & Garden</a></li>
+          <li><a class="dropdown-item" href="#" >Kids Furniture</a></li>
+          <li><a class="dropdown-item" href="#" >Other Household Items</a></li>
+          </div>
+          <div class="col-3">
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;"><b>Fashion</b></a></li>
+          <li><a class="dropdown-item" href="#">Men</a></li>
+          <li><a class="dropdown-item" href="#">Women</a></li>
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;">Kids</a></li>
+          <li><a class="dropdown-item" href="#"><b>Book,Sports & Hobbies</b></a></li>
+          <li><a class="dropdown-item" href="#">Book</a></li>
+          <li><a class="dropdown-item" href="#">Gym & Fitness</a></li>
+          <li><a class="dropdown-item" href="#">Musical Instruments</a></li>
+          <li><a class="dropdown-item" href="#">Sports Equipment</a></li>
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;">Others Hobbies</a></li>
+          <li><a class="dropdown-item" href="#"><b>Pets</b></a></li>
+          <li><a class="dropdown-item" href="#">Fishes & Aquarium</a></li>
+          <li><a class="dropdown-item" href="#">pet Food & Accessories</a></li>
+          <li><a class="dropdown-item" href="#">Dog</a></li>
+          <li><a class="dropdown-item" href="#" style="margin-bottom: 10px;">Others Pets</a></li>
+          <li><a class="dropdown-item" href="#"><b>Services</b></a></li>
+          <li><a class="dropdown-item" href="#">Electronics & Computer</a></li>
+          <li><a class="dropdown-item" href="#">Education & Classes</a></li>
+          <li><a class="dropdown-item" href="#">Drivers & Taxi</a></li>
+          <li><a class="dropdown-item" href="#">Health & Beauty</a></li>
+          <li><a class="dropdown-item" href="#">Other Services</a></li>
+          </div>
+          </div>
+        </ul>
+
+        <div>
+          <ul class="nav-list d-flex list-unstyled pt-3">
+            <li>
+              <a href="#"><span>cars</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Motorcycles</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Mobile Phones</span></a>
+            </li>
+            <li>
+              <a href="#"><span>For Sale: Houses & Apartments</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Scooters</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Commercial & Other Vehicles</span></a>
+            </li>
+            <li>
+              <a href="#"><span> For Rent: Houses & Apartments </span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   
+    <div class="container col-sm-12 col-md-3 col-6">
+      <!-- <img src="img/add-1.jpg" alt="Advertisement"  width="970" height="250" style="display:block ;margin-left: 170px;margin-bottom: 5%;"> -->
+    </div>
+    <!-- crousel   -->
+    <!-- fresh-list  -->
+    <div class="container-fluid fresh">
+      <div class="container">
+        <!-- <h4>Fresh recommendations</h4> -->
+      <div class="row mb-3 freshres">
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <span class="feature text-center"
+              ><a class="text-decoration-none text-dark" href="#"
+                >FEATRUED</a
+              ></span
+            >
+            <i class="far fa-heart"></i>
+            <img src="img/f-1.webp" class="card-img-top" alt="..." />
+            <div class="card-body" style="border-left: 5px solid #ffce32">
+              <span class="card-text">₹ 2,45,000</span>
+              <span>2010 - 52,000 km</span>
+              <span>Maruti Suzuki Swift VDI BSI IV,2010</span>
+              <span class="card-bottom">
+                purvi patel nagar<span class="ms-5"> Mar 07 </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <span class="feature text-center"
+              ><a class="text-decoration-none text-dark" href="#"
+                >FEATRUED</a
+              ></span
+            >
+            <i class="far fa-heart"></i>
+            <img src="img/f- 2.webp" class="card-img-top" alt="..." />
+            <div class="card-body" style="border-left: 5px solid #ffce32">
+              <span class="card-text">₹ 1,15,000</span>
+              <span>2017 - 15.875 km</span>
+              <span>2017 ROYAL ENFIELD CLASSIC </span>
+              <span class="card-bottom">
+                Bharat Nagar<span class="ms-5"> SEP 16 </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f- 3.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 15,000</span>
+              <span></span>
+              <span>iPhone</span>
+              <span class="card-bottom">
+                Pimpri Chinchwad, Pune<span class="ms-5"> TODAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f -4.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 13,500</span>
+              <span></span>
+              <span>IPhone XR get Now At lowest Price</span>
+              <span class="card-bottom">
+                Samudrapur<span class="ms-5"> TODAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f- 5.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 350</span>
+              <span>Shoes White</span>
+              <span>for girl</span>
+              <span class="card-bottom">
+                Vankarvas bhuj<span class="ms-5"> TODAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <div
+              class="card-body bg-primary text-white rounded"
+              style="height: 322px"
+            >
+              <h5 class="card-title">Want to see your stuff here?</h5>
+              <p class="card-text-m mt-3">
+                Make some extra cash by selling things in your community. Go on,
+                it's quick and easy.
+              </p>
+              <a href="#" class="btn middle text-white">Load more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f -7.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 2,000</span>
+              <span>Luxury Authentic Saree</span>
+              <span>Limited stock</span>
+              <span class="card-bottom">
+                Sumdh bigha sarai<span class="ms-5"> TODAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f - 8.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 3,800</span>
+              <span>Fashionate Induction Cooktops</span>
+              <span></span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> Apr 12 </span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-    9.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 175</span>
+              <span></span>
+              <span>PC Softwares games</span>
+              <span class="card-bottom">
+                Pimpri, Pune<span class="ms-5"> YESTERDAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-  10.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 13,00,000</span>
+              <span></span>
+              <span>Land for sale </span>
+              <span class="card-bottom">
+                 Chinchwad, Pune<span class="ms-5"> Apr 6 </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f - 11.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 9,600</span>
+              <span></span>
+              <span>3D android Wifi BT 4K LED </span>
+              <span class="card-bottom">
+                Samudarapur Maharastra<span class="ms-5"> TODAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-  12.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 14,000</span>
+              <span>i-Phone</span>
+              <span></span>
+              <span class="card-bottom">
+                hinganghat MIDC Maharastra<span class="ms-5"> TODAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f  13.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 12,500</span>
+              <span></span>
+              <span>i-Phone</span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> TESTRDAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f 14.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 5,90,000</span>
+              <span></span>
+              <span>2012-67,500 km</span>
+              <span>Hyundai Verna VTVT</span>
+              <span class="card-bottom">
+                Samudrapur Maharashtra<span class="ms-5"> TODAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f 15.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 15,99,000</span>
+              <span></span>
+              <span>2020-18,200 km</span>
+              <span>Kia Seltos HTX D ,2020 Diesel</span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> 4 Days Ago </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f 16.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 1,000</span>
+              <span></span>
+              <span>Starting from 700 onwards</span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> Today </span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-17.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 3,300</span>
+              <span></span>
+              <span>RDD5 LED 3D 4K Projector Wifi smart </span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> 4 Days Ago </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-18.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 2,000</span>
+              <span></span>
+              <span>Antique Columbus Filp Binoculars with</span>
+              <span class="card-bottom">
+                Samudrapur Maharashtra<span class="ms-5"> TODAY </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-19.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 3,500</span>
+              <span></span>
+              <span>RD6 LED Projector 3d 4k </span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> 4 Days Ago </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f 20.webp" class=card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 1,500</span>
+              <span></span>
+              <span>i phone Watch</span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> Today </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-21.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 599</span>
+              <span></span>
+              <span>New Speakers</span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> Today </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-22.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 7,21,000</span>
+              <span>Hyundai Grand I10 (2021)</span>
+              <span>Asta 1.2 Kappa VTVT</span>
+              <span class="card-bottom">
+                Samudrapur maharastra<span class="ms-5"> Today </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-23.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 27,90,000</span>
+              <span>2bds 2ba 927ft2</span>
+              <span>Home</span>
+              <span class="card-bottom">
+                maharastra<span class="ms-5"> mar 31 </span></span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-6">
+          <div class="card">
+            <i class="far fa-heart"></i>
+            <img src="img/f-24.webp" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <span class="card-text">₹ 1,05,000</span>
+              <span>Ktm Bike</span>
+              <span>2016-5000km</span>
+              <span class="card-bottom">
+                HAZRAT<span class="ms-5"> Today </span></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- load more btn -->
+    <div
+      class="container btn-b d-flex align-items-center justify-content-center"
+    >
+      <a href="#" class="btn my-5">Load more</a>
+    </div>
+    <!-- advartice 2 -->
+    <div class="container">
+      <!-- <img src="img/add-2.jpg" alt="Advertisement"  width="970" height="250" style="display:block ;margin-left: 170px;margin-bottom: 5%;"> -->
+    </div>
+    <!-- section-4  img-footer   -->
+    <div class="container-fluid">
+      <div class="img-footer">
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/phone-app.png" alt="" />
+          </div>
+          <div class="col-sm-4">
+            <div class="footer-2">
+              <h2>TRY THE OLX APP</h2>
+              <p>
+                Buy, sell and find just about anything using the app on your
+                mobile.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="footer-3">
+              <h6>GET YOUR APP TODAY</h6>
+              <span
+                ><a href="#"
+                  ><img src="img/appstore.png" style="width: 120px" alt="" /></a
+              ></span>
+              <span
+                ><a href="#"
+                  ><img
+                    src="img/playstore.png"
+                    style="width: 120px"
+                    alt="" /></a
+              ></span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section-5 footer -->
+    <div class="container-fluid footer-list" style="width: 95%;">
+      <div class="container">
+      <div class="row mt-3">
+        <div class="col-sm-2 col-6">
+          <ul class="foot-list list-unstyled">
+            <li><h6>POPULAR LOCATIONS</h6></li>
+            <li><a href="#"> kolkata</a></li>
+            <li><a href="#"> Mumbai</a></li>
+            <li><a href="#"> Chennai</a></li>
+            <li><a href="#"> Pune</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-6">
+          <ul class="foot-list list-unstyled">
+            <li><h6>TRENDING LOCATIONS</h6></li>
+            <li><a href="#"> Bhubaneshwar</a></li>
+            <li><a href="#"> Hyderabad</a></li>
+            <li><a href="#"> Chandigarh</a></li>
+            <li><a href="#"> Nashik</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-6">
+          <ul class="foot-list list-unstyled">
+            <li><h6>ABOUT US</h6></li>
+            <li><a href="#"> About OLX Group</a></li>
+            <li><a href="#"> Careers </a></li>
+            <li><a href="#"> Contact Us</a></li>
+            <li><a href="#"> OLXPeople</a></li>
+            <li><a href="#"> Waah Jobs</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2 col-6">
+          <ul class="foot-list list-unstyled">
+            <li><h6>OLX</h6></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Legal & Privacy information</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 col-6">
+          <div class="nituu">
+            <div>
+              <h6>FOLLOW US</h6>
+              <div>
+                <span
+                  ><a href="#"><i class="fab fa-facebook"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-instagram"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-twitter"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fab fa-youtube"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="mt-5">
+              <a href="#"><img src="img/playstore.png" alt="" /></a>
+              <a href="#"><img src="img/appstore.png" alt="" /></a>
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- footer end   -->
+    <div class="fend container-fluid bg-dark text-white" style="width: 95%;">
+      <div>
+        Other Countries
+        <a class="text-decoration-none text-white ms-2" href="#"
+          >Pakistan - South Africa - Indonesia</a
+        >
+      </div>
+      <div>Free Classifieds in India. © 2006-2021 OLX</div>
+    </div>
+
+    <!-- java script   -->
+    <script src="../olx/boostrap'/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

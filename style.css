@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* overflow: hidden; */
+}
+:root {
+  --primary-color: #002f34;
+  --secondary-color: rgb(133, 133, 133);
+  --text-color: red;
+}
+h2 {
+  font-weight: bolder;
+}
+h6,
+h4 {
+  font-weight: bolder;
+  color: #002f34;
+}
+/* navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 5px #bbb;
+}
+.nav-item {
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 260px;
+  height: 44px;
+}
+.search,
+.fa-chevron-down,
+.location,
+.fa-search {
+  margin: 10px;
+  font-size: 22px;
+}
+.fa-chevron-down:hover {
+  transition: transform 0.5s;
+  transform: rotate(180deg);
+}
+.form-control {
+  padding: 0.5rem 0.75rem;
+  border: 2px solid black;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 35rem;
+}
+
+.btnsearch {
+  width: 50px;
+  height: 44px;
+}
+.dropdown-item:hover {
+  background-color: cyan;
+}
+
+.dropdown-toggle::after {
+  margin-left: 8.255em;
+}
+.dropdown-togglee {
+  margin-right: 20px;
+}
+.login {
+  border-bottom: 2px solid black;
+}
+.btn-plus {
+  /* border: 3px solid; */
+  border-top: 5px solid cyan;
+  border-bottom: 5px solid yellow;
+  border-left: 5px solid blue;
+  border-right: 5px solid blue;
+  border-radius: 20px;
+  padding: 5px 10px;
+  box-shadow: 4px 5px 8px #888;
+}
+/* Nav-list    */
+.dropdown-toggle::after {
+  margin-left: 0.255em;
+}
+.nav-list li a {
+  text-decoration: none;
+  /* margin: 0 8px; */
+  color: #002f34;
+}
+/* top-banner  */
+
+.btn-s {
+  background-color: #fff;
+  padding: 7px;
+
+  height: 40px;
+  width: 102px;
+  border-radius: 5px;
+  border: none;
+}
+.btn-s a {
+  text-decoration: none;
+  padding: -1px 17px;
+}
+.btn-s a:hover {
+  background-color: #0a74ff;
+  color: #fff;
+}
+.para {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 200px;
+}
+.btn-2t {
+  position: absolute;
+  top: 184px;
+  right: 336px;
+}
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/hero_bg_in@1x.png");
+  height: 200px;
+  width: 135%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* fresh-list */
+.fresh div .card img {
+  height: 200px;
+  padding: 10px 30px;
+}
+.card {
+  position: relative;
+}
+.feature {
+  background-color: #ffce32;
+  position: absolute;
+  top: 20px;
+  left: 8px;
+  width: 90px;
+  font-size: small;
+}
+.feature a {
+  font-weight: bolder;
+}
+.fa-heart {
+  font-size: 22px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card-bottom {
+  font-size: 11px;
+}
+.card-text {
+  font-weight: 700;
+  font-size: large;
+}
+.card-text-m {
+  text-align: center;
+  font-size: 15px;
+}
+.middle {
+  border: 2px solid white;
+  width: 250px;
+  margin-top: 90px;
+}
+.middle:hover {
+  box-shadow: inset 0 0 0px 2px #fff;
+}
+/* load more btn  */
+.btn-b .btn {
+  border: 3px solid black;
+  font-weight: bolder;
+}
+.btn-b .btn:hover {
+  box-shadow: inset 0 0 0px 2px #000;
+}
+/* section-4  img-footer    */
+.footer-2 {
+  margin: 30px 0 0 65px;
+  padding-right: 20px;
+  height: 120px;
+  border-right: 2px solid rgb(0, 47, 52, 0.2);
+}
+.footer-3 {
+  margin: 33px 0 0 74px;
+}
+
+.img-footer {
+  background-color: rgba(0, 47, 52, 0.03);
+}
+
+/* section-5 footer-list  */
+.footer-list {
+  background-color: #ebeeef;
+  border-top: 1px solid rgb(197, 192, 192);
+}
+.footer-list a {
+  text-decoration: none;
+  color: rgba(0, 47, 52, 0.64);
+  font-size: small;
+  font-weight: bold;
+}
+.nituu {
+  margin-left: 90px;
+}
+
+/* footer end    */
+.fend {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fend div {
+  margin: 10px 0;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+/*responcive part*/
+@media screen and (max-width: 575.98px) {
+  .dropdown-toggle::after {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex;
+  }
+  .form-control {
+    width: 23rem;
+    margin-left: -18rem;
+  }
+  #navtext {
+    width: 10px;
+    visibility: hidden;
+  }
+  .navbar-nav {
+    display: none;
+  }
+  #dropres {
+    width: 0px;
+    visibility: hidden;
+  }
+  .nav-list-res {
+    display: none;
+  }
+  #banner {
+    position: relative;
+  }
+  .btn-2t {
+    display: flex;
+    margin-right: 5px;
+  }
+  .btn-2t {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+  }
+  #btn-s1 {
+    margin-right: 5px;
+  }
+  .nituu {
+    position: relative;
+  }
+  .mt-5 {
+    position: absolute;
+    bottom: 6px;
+    left: 150px;
+  }
+  .card {
+    margin: 7px 0 5px 0;
+  }
+  .freshres {
+    margin: 0%;
+  }
+}
